@@ -49,7 +49,11 @@
 
     $item="pizza";
     $price=200;
-    $_POST[]
+    $quantity=$_POST['quantity'];
+    $total=null;
+    $total=$quantity * $price;
+    echo"You have ordered {$quantity} X {$item}s <br>";
+    echo"Your total is:\${$total}";
    // echo"{$_POST['username']}<br>";
     //echo"{$_POST['password']}<br>";
 
